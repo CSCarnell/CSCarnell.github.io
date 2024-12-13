@@ -1,6 +1,5 @@
 /**
  * Christopher Carnell
- * CS-360
  *
  * This utility class provides security-related functions for the application.
  * It includes methods for hashing passwords using SHA-256 before storing them in the database.
