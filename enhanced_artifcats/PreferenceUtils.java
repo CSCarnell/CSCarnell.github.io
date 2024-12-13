@@ -1,6 +1,5 @@
 /**
  * Christopher Carnell
- * CS-360
  *
  * This utility class manages user preferences using SharedPreferences, maybe move this to the database later
  * It handles storing and retrieving whether a user has opted in for SMS notifications.
