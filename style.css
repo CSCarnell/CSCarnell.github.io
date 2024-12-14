@@ -71,7 +71,7 @@ h4 {
 }
 
 header h1 {
-  color: #fff; 
+  color: #fff; !important;
 }
 /* Links */
 a {
