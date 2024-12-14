@@ -117,7 +117,7 @@
 
         <!-- Enhancement One Narrative Section -->
       <h4>Enhancement Two Narrative: Algorithms and Data Structure</h4>
-      <p><strong>Artifact Chosen:</strong> MainActivity.java</p>
+   
       <p>The artifacts DatabaseManager.java, DataDisplayActivity.java, and WeightEntry.java are core components of my WeightWatcher Android application. Together, they showcase my ability to optimize algorithms, data structures, and implement efficient, secure, and maintainable coding practices.</p>
       <ul>
         <li><strong>DatabaseManager.java:</strong> I improved performance and security by using projections to retrieve only necessary data, parameterized queries to prevent SQL injection, and a caching mechanism to reduce database calls.</li>
@@ -172,11 +172,17 @@
       <p>To see the full code for all artifacts and enhancements, please visit the <a href="https://github.com/CSCarnell/CSCarnell.github.io" target="_blank">GitHub repository</a>.</p>
 
         <!-- Enhancement One Narrative Section -->
-      <h4>Enhancement One Narrative: Software Design and Engineering</h4>
-      <p><strong>Artifact Chosen:</strong> MainActivity.java</p>
-      <p>This artifact was developed in October 2024 as part of a weight-tracking application. MainActivity.java handles user authentication—allowing users to log in, register, and navigate through the app based on their login status. I selected MainActivity.java because it encapsulates crucial software development concepts including user authentication, code refactoring, and exception handling.</p>
-      <p>Key components showcasing my skills include removing unused variables, introducing helper methods like <code>validateInputs()</code> for reusability, and separating login and registration logic into <code>handleLogin()</code> and <code>handleRegistration()</code>. I wrapped database operations in try-catch blocks for proper exception handling and added method-level comments. I also addressed an automatic login bug by creating a new user object after successful registration, streamlining the login process.</p>
-      <p>By refactoring code and improving documentation, I met Course Outcome Two (professional-quality software). Fixing the automatic login bug showcased my problem-solving skills, meeting Course Outcome Three. Implementing exception handling contributed to a security mindset, meeting Course Outcome Five. I learned the importance of planning, refactoring, commenting, and the need to tackle issues incrementally with thorough testing.</p>
+      <h4>Enhancement Three Narrative: Databases</h4>
+     
+      <p>In this third enhancement of my WeightWatcher Android application, I optimized the database schema, improved input validation, and strengthened security measures to enhance performance, usability, and resilience. The main artifacts—DatabaseHelper.java, SmsPermissionActivity.java, DatabaseManager.java, and DataDisplayActivity.java—demonstrate these improvements:</p>
+       <ul>
+        <li><strong>DatabaseHelper.java:</strong>Introduced constraints (NOT NULL, UNIQUE, CHECK), foreign keys with cascading actions, and indexes to enforce data integrity, maintain referential integrity, and improve query performance.</li>
+        <li><strong>SmsPermissionActivity.java:</strong>Implemented phone number validation with regex, ensuring valid user input while providing immediate feedback. This improved both security and user experience.</li>
+        <li><strong>DatabaseManager.java and DataDisplayActivity.java:</strong>Adjusted logic to handle NULL values correctly, preventing errors when prompting users for goal weights. Enhanced exception handling and resource management ensured stable and secure data operations.</li>
+      </ul>
+      
+      <p>These changes align with professional standards and demonstrate my proficiency in database optimization, secure coding, and user-centric design. They supported the course outcomes related to building professional-quality software (Outcome 2), optimizing algorithmic data handling (Outcome 3), leveraging innovative techniques (Outcome 4), and anticipating security challenges (Outcome 5).</p>
+      <p>Throughout this process, I learned that even small schema changes require careful testing and logic adjustments. Introducing NULL-based logic for goal weights revealed interdependencies that demanded thorough debugging. I also confirmed that balancing security (like input validation) with usability can significantly improve user satisfaction without compromising safety. Ultimately, these enhancements reinforced the value of incremental development, code reviews, and strategic debugging to achieve a reliable and efficient application.</p>
 
 
 
