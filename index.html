@@ -67,13 +67,13 @@
       <div class="artifact-column">
         <h4>Original Version</h4>
         <img src="original_artifacts/images/SecurityUtils_O.png" alt="Original SecurityUtils.java code snippet" class="artifact-image">
-        <p>Brief description of original code and what issues existed.</p>
+        <p>The original SecurityUtils.java code relied on a simple SHA-256 hashing method to secure passwords. While SHA-256 is a strong cryptographic hash function, using it directly for passwords is insufficient due to the lack of salt and iteration count. Without a salt, identical passwords produce identical hashes, making it easier for attackers to use precomputed tables (rainbow tables) to crack them. Additionally, the code used e.printStackTrace() for exception handling, which could reveal internal details of the application’s operation. No input validation checks were performed on the password, and there was minimal documentation, making the code less maintainable and not aligned with best security practices.</p>
         <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/original_artifacts/SecurityUtils.java" target="_blank">View Full Original Code</a></p>
       </div>
       <div class="artifact-column">
         <h4>Enhanced Version</h4>
         <img src="enhanced_artifacts/images/SecurityUtils_E.png" alt="Enhanced SecurityUtils.java code snippet" class="artifact-image">
-        <p>Brief description of enhancements: improved exception handling, added documentation, optimized logic.</p>
+        <p>The updated SecurityUtils.java addresses these issues by implementing PBKDF2WithHmacSHA256 for hashing passwords, which includes using a unique salt for each user and multiple iterations to slow down brute-force attacks. This approach significantly improves security by preventing rainbow table attacks and ensuring that even if two users choose the same password, the resulting hashes differ. Input validation ensures that null or empty passwords are not processed. Instead of printing stack traces, the code now logs exceptions securely using Android’s logging system. Additionally, comprehensive method-level comments and clear documentation improve maintainability and clarity. In summary, the updated code follows industry-standard security measures, enhances error handling, and better supports long-term maintenance and scalability.</p>
         <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/enhanced_artifacts/SecurityUtils.java" target="_blank">View Full Enhanced Code</a></p>
       </div>
     </div>
