@@ -46,103 +46,72 @@
       </div>
     </section>
 
-  
  <!-- Enhancements Section -->
-<section id="enhancements">
-  <h2>Enhancements</h2>
-  <p>Below you can see original vs. enhanced versions of key artifacts, along with descriptions and links to the full code.</p>
+    <section id="enhancements">
+      <!-- Enhancement One -->
+      <h3>Enhancement One: Software Design and Engineering</h3>
+      
+      <!-- Artifact: MainActivity.java -->
+      <h4>MainActivity.java</h4>
+      <div class="artifact-grid">
+        <div class="artifact-column">
+          <h5>Original Version</h5>
+          <img src="original_artifacts/images/MainActivity_O.png" alt="Original MainActivity code snippet" class="artifact-image">
+          <p>Original code had duplicated logic (input validation in Login and Register) and lacked exception handling.</p>
+          <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/original_artifacts/MainActivity.java" target="_blank">View Full Original Code</a></p>
+        </div>
+        <div class="artifact-column">
+          <h5>Enhanced Version</h5>
+          <img src="enhanced_artifacts/images/MainActivity_E.png" alt="Enhanced MainActivity code snippet" class="artifact-image">
+          <p>Refactored code, added exception handling, improved documentation, and fixed automatic login bug for newly registered users.</p>
+          <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/enhanced_artifacts/MainActivity.java" target="_blank">View Full Enhanced Code</a></p>
+        </div>
+      </div>
 
-  <!-- Enhancement One: Software Design and Engineering -->
-  <h3>Enhancement One: Software Design and Engineering</h3>
+      <!-- Artifact: SecurityUtils.java -->
+      <h4>SecurityUtils.java</h4>
+      <div class="artifact-grid">
+        <div class="artifact-column">
+          <h5>Original Version</h5>
+          <img src="original_artifacts/images/SecurityUtils_O.png" alt="Original SecurityUtils.java code snippet" class="artifact-image">
+          <p>The original SecurityUtils.java relied on a simple SHA-256 hashing method with no salt, making passwords vulnerable. It also used printStackTrace() and lacked input validation and documentation.</p>
+          <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/original_artifacts/SecurityUtils.java" target="_blank">View Full Original Code</a></p>
+        </div>
+        <div class="artifact-column">
+          <h5>Enhanced Version</h5>
+          <img src="enhanced_artifacts/images/SecurityUtils_E.png" alt="Enhanced SecurityUtils.java code snippet" class="artifact-image">
+          <p>The updated version uses PBKDF2WithHmacSHA256 with a unique salt and multiple iterations, adds input validation, secure logging, and comprehensive documentation, aligning with industry-standard security measures.</p>
+          <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/enhanced_artifacts/SecurityUtils.java" target="_blank">View Full Enhanced Code</a></p>
+        </div>
+      </div>
 
-  <h4>MainActivity.java</h4>
-  <div class="artifact-grid">
-    <div class="artifact-column">
-      <h5>Original Version</h5>
-      <img src="original_artifacts/images/MainActivity_O.png" alt="Original MainActivity code snippet" class="artifact-image">
-      <p>Original code had duplicated logic (input validation in Login and Register) and lacked exception handling.</p>
-      <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/original_artifacts/MainActivity.java" target="_blank">View Full Original Code</a></p>
-    </div>
-    <div class="artifact-column">
-      <h5>Enhanced Version</h5>
-      <img src="enhanced_artifacts/images/MainActivity_E.png" alt="Enhanced MainActivity code snippet" class="artifact-image">
-      <p>Description of enhancements: refactored code, added exception handling, improved documentation.</p>
-      <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/enhanced_artifacts/MainActivity.java" target="_blank">View Full Enhanced Code</a></p>
-    </div>
-  </div>
+      <p>To see the full code for all artifacts and enhancements, please visit the <a href="https://github.com/CSCarnell/CSCarnell.github.io" target="_blank">GitHub repository</a>.</p>
 
-  <h4>SecurityUtils.java</h4>
-  <div class="artifact-grid">
-    <div class="artifact-column">
-      <h5>Original Version</h5>
-      <img src="original_artifacts/images/SecurityUtils_O.png" alt="Original SecurityUtils.java code snippet" class="artifact-image">
-      <p>The original SecurityUtils.java code relied on a simple SHA-256 hashing method with no salt or iterations, making it vulnerable to attacks. It also used printStackTrace() and lacked input validation and documentation.</p>
-      <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/original_artifacts/SecurityUtils.java" target="_blank">View Full Original Code</a></p>
-    </div>
-    <div class="artifact-column">
-      <h5>Enhanced Version</h5>
-      <img src="enhanced_artifacts/images/SecurityUtils_E.png" alt="Enhanced SecurityUtils.java code snippet" class="artifact-image">
-      <p>The updated SecurityUtils.java uses PBKDF2WithHmacSHA256 with a unique salt and multiple iterations, adds input validation, replaces printStackTrace() with secure logging, and includes thorough documentation.</p>
-      <p><a href="https://github.com/CSCarnell/CSCarnell.github.io/blob/main/enhanced_artifacts/SecurityUtils.java" target="_blank">View Full Enhanced Code</a></p>
-    </div>
-  </div>
+      <!-- Enhancement One Narrative Section -->
+      <h4>Enhancement One Narrative: Software Design and Engineering</h4>
+      <p><strong>Artifact Chosen:</strong> MainActivity.java</p>
+      <p>This artifact was developed in October 2024 as part of a weight-tracking application. MainActivity.java handles user authentication—allowing users to log in, register, and navigate through the app based on their login status. I selected MainActivity.java because it encapsulates crucial software development concepts including user authentication, code refactoring, and exception handling.</p>
+      <p>Key components showcasing my skills include removing unused variables, introducing helper methods like <code>validateInputs()</code> for reusability, and separating login and registration logic into <code>handleLogin()</code> and <code>handleRegistration()</code>. I wrapped database operations in try-catch blocks for proper exception handling and added method-level comments. I also addressed an automatic login bug by creating a new user object after successful registration, streamlining the login process.</p>
+      <p>By refactoring code and improving documentation, I met Course Outcome Two (professional-quality software). Fixing the automatic login bug showcased my problem-solving skills, meeting Course Outcome Three. Implementing exception handling contributed to a security mindset, meeting Course Outcome Five. I learned the importance of planning, refactoring, commenting, and the need to tackle issues incrementally with thorough testing.</p>
 
-  <p>To see the full code for all artifacts and enhancements, please visit the <a href="https://github.com/CSCarnell/CSCarnell.github.io" target="_blank">GitHub repository</a>.</p>
-</section>
+      <!-- Enhancement Two: Algorithms and Data Structure (Add artifacts as needed) -->
+      <h3>Enhancement Two: Algorithms and Data Structure</h3>
+      <!-- Add similar artifact-grid sections for Enhancement Two artifacts, 
+           followed by a link to the full code repository, 
+           then a narrative section without images. -->
 
-<!-- Narratives Section -->
-<section id="narratives">
-  <h2>Narratives</h2>
+      <!-- Enhancement Three: Databases (Add artifacts as needed) -->
+      <h3>Enhancement Three: Databases</h3>
+      <!-- Add similar artifact-grid sections for Enhancement Three artifacts,
+           followed by a link to the full code repository,
+           then a narrative section without images. -->
 
-  <!-- Enhancement One Narrative -->
-  <h3>Enhancement One Narrative: Software Design and Engineering</h3>
-  <p><strong>Artifact Chosen:</strong> MainActivity.java</p>
-  <p>This artifact was developed in October 2024 as part of a weight-tracking application. MainActivity.java handles user authentication—allowing users to log in, register, and navigate through the app based on their login status. I selected MainActivity.java because it encapsulates crucial software development concepts including user authentication, code refactoring, and exception handling.</p>
-
-  <p>Key components showcasing my skills include the removal of unused variables, introducing helper methods like <code>validateInputs()</code> for reusability, and separating login and registration logic into <code>handleLogin()</code> and <code>handleRegistration()</code>. I wrapped database operations in try-catch blocks to implement proper exception handling and added method-level comments to clarify purpose, parameters, and return values. I also addressed an automatic login bug by creating a new user object after successful registration to streamline the login process.</p>
-
-  <p>By refactoring code and improving documentation, I aligned with Course Outcome Two, demonstrating the ability to produce professional-quality software. Fixing the automatic login bug showcased my problem-solving skills, meeting Course Outcome Three. Implementing exception handling contributed to a security mindset, aligning with Course Outcome Five. Through these changes, I learned the importance of planning, refactoring for maintainability, and using comments to enhance code clarity. The primary challenge—avoiding new bugs while refactoring—was overcome by addressing one issue at a time and testing after each change.</p>
-
-  <!-- Suggest a few images to illustrate these narrative points -->
-  <div class="artifact-grid">
-    <div class="artifact-column">
-      <h4>Removing Unused Variables</h4>
-      <img src="enhanced_artifacts/images/MainActivity_unusedVarRemoval.png" alt="Screenshot of removed unused variable code" class="artifact-image">
-      <p>Example of removing the unused REQUEST_SMS_PERMISSION variable to clean up the code.</p>
-    </div>
-
-    <div class="artifact-column">
-      <h4>Helper Methods Introduced</h4>
-      <img src="enhanced_artifacts/images/MainActivity_validateInputs.png" alt="Screenshot of validateInputs method" class="artifact-image">
-      <p>Showcasing the new <code>validateInputs()</code> method for reusable, centralized input validation logic.</p>
-    </div>
-  </div>
-
-  <div class="artifact-grid">
-    <div class="artifact-column">
-      <h4>handleLogin and handleRegistration Methods</h4>
-      <img src="enhanced_artifacts/images/MainActivity_handleMethods.png" alt="Screenshot of handleLogin and handleRegistration methods" class="artifact-image">
-      <p>Demonstrating separated logic for login and registration, improving code clarity and maintainability.</p>
-    </div>
-
-    <div class="artifact-column">
-      <h4>Exception Handling Implementation</h4>
-      <img src="enhanced_artifacts/images/MainActivity_tryCatch.png" alt="Screenshot of try-catch implementation" class="artifact-image">
-      <p>Illustrating the use of try-catch blocks around database operations, ensuring robust error handling.</p>
-    </div>
-  </div>
-
-  <div class="artifact-grid">
-    <div class="artifact-column">
-      <h4>Automatic Login Bug Fix</h4>
-      <img src="enhanced_artifacts/images/MainActivity_autoLoginFix.png" alt="Screenshot of the auto-login fix code snippet" class="artifact-image">
-      <p>Showing how a new user object is created after registration, ensuring users are automatically logged in as intended.</p>
-    </div>
-  </div>
-
-</section>
+  </section>
+  
+</main>
 
 <footer>
   <p>&copy; 2024 Christopher S. Carnell. All Rights Reserved.</p>
 </footer>
-
+</body>
+</html>
